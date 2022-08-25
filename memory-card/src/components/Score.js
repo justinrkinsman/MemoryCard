@@ -19,7 +19,7 @@ export function ScoreComponent() {
             <legend>Score</legend>
             <p>Current Score: {score}</p>
             <p>High Score: {highScore}</p>
-            <p>Max Score: 18</p>
+            <p>Max Score: 16</p>
         </fieldset>
         </>
     )
