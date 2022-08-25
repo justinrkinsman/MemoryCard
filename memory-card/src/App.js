@@ -1,10 +1,12 @@
 import React from "react"
 import { Title } from "./components/Title.js"
+import { Gameboard } from "./components/Gameboard.js";
 
 export function App() {
   return (
-    <div className="App">
+    <fieldset className="App">
       <Title />
-    </div>
+      <Gameboard />
+    </fieldset>
   );
 }
