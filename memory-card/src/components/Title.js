@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Rules } from './Rules.js'
+import { ScoreComponent } from './Score.js'
 
 export class Title extends Component {
     render(){
@@ -7,6 +8,7 @@ export class Title extends Component {
             <>
                 <fieldset>
                     <Rules />
+                    <ScoreComponent />
                 </fieldset>
             </>
         )
