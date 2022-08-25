@@ -10,7 +10,7 @@ export function ScoreComponent() {
     const [highScore, setHighScore] = useState(0)
 
     const changeHighScore = () => {
-        setScore(13)
+        setHighScore(13)
     }
 
     return(
