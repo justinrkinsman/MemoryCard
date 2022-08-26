@@ -52,7 +52,7 @@ export function Card(props) {
     return(
         <>
             <div className="card">
-                <img onclick={props.onClick} src={props.source} alt={props.alternate}></img>
+                <img onClick={props.function} src={props.source} alt={props.alternate}></img>
             </div>
         </>
     )
