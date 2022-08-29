@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MemoryCard/static/css/main.7eaa0821.css",
+    "main.js": "/MemoryCard/static/js/main.7880c42e.js",
+    "static/media/mummy.jpg": "/MemoryCard/static/media/mummy.efe199a99f67dd079833.jpg",
+    "static/media/creature.jpg": "/MemoryCard/static/media/creature.eb35335a0fa2502ccd1a.jpg",
+    "static/media/myers.jpg": "/MemoryCard/static/media/myers.cfd0a07aef5b569c9dce.jpg",
+    "static/media/chucky.jpg": "/MemoryCard/static/media/chucky.8e521bf0c215e5dfe22b.jpg",
+    "static/media/pinhead.jpg": "/MemoryCard/static/media/pinhead.15efa5bf33bac687f27b.jpg",
+    "static/media/leatherface.jpg": "/MemoryCard/static/media/leatherface.7774edce61430f6788dc.jpg",
+    "static/media/frankenstein.jpg": "/MemoryCard/static/media/frankenstein.697fe9758cf690bc3758.jpg",
+    "static/media/predator.jpg": "/MemoryCard/static/media/predator.0dbc5e706c213e38a0af.jpg",
+    "static/media/freddy.jpg": "/MemoryCard/static/media/freddy.3019aced67b18df67d95.jpg",
+    "static/media/invisibleman.jpg": "/MemoryCard/static/media/invisibleman.89ce3f05b2ab14a51efa.jpg",
+    "static/media/jason.jpg": "/MemoryCard/static/media/jason.d00a903bf4b200d059f2.jpg",
+    "static/media/wolfman.jpg": "/MemoryCard/static/media/wolfman.ca4ff4215a19840c0c9c.jpg",
+    "static/media/dracula.jpg": "/MemoryCard/static/media/dracula.a90a3f761166cddc7d78.jpg",
+    "static/media/xenomorph.jpg": "/MemoryCard/static/media/xenomorph.c5156b8b427cc0ce44c1.jpg",
+    "static/media/nosferatu.jpg": "/MemoryCard/static/media/nosferatu.4d0cbd123e8d64809996.jpg",
+    "index.html": "/MemoryCard/index.html",
+    "main.7eaa0821.css.map": "/MemoryCard/static/css/main.7eaa0821.css.map",
+    "main.7880c42e.js.map": "/MemoryCard/static/js/main.7880c42e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eaa0821.css",
+    "static/js/main.7880c42e.js"
+  ]
+}
