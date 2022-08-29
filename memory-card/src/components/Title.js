@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Rules } from './Rules.js'
 import { ScoreComponent } from './Score.js'
 
-export class Title extends Component {
-    render(){
-        return(
-            <>
-                <fieldset>
-                    <Rules />
-                    <ScoreComponent />
-                </fieldset>
-            </>
-        )
-    }
+export function Title(props) {
+    return(
+        <>
+            <fieldset>
+                <Rules />
+                <ScoreComponent score={props.score} hiScore={props.hiScore}/>
+            </fieldset>
+        </>
+    )
 }

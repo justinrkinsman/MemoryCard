@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Card } from './Card'
+import { Title } from './Title'
 import './gameboard.css'
 import dracula from "../images/dracula.jpg"
 import frankenstein from "../images/frankenstein.jpg"
@@ -23,7 +24,7 @@ export function Gameboard() {
     const [clickedCard, setClickedCard] = useState([])
     const [currentScore, setCurrentScore] = useState(0)
     const [highScore, setHighScore] = useState(0)
-    const [images, setImages] = useState([
+    const [images] = useState([
         ['Dracula', dracula], 
         ['Frankenstein', frankenstein], 
         ['Nosferatu', nosferatu],
@@ -59,18 +60,18 @@ export function Gameboard() {
         if(clickedCard.includes(e.target.alt) === false){
             setClickedCard(current => [...current, e.target.alt])
             setCurrentScore(currentScore + 1)
-            setHighScore(currentScore + 1)
+            if(currentScore === highScore){
+                setHighScore(currentScore + 1)
+            }
         }else{
             setClickedCard([])
             setCurrentScore(0)
         }
-        console.log(clickedCard)
-        console.log(`Current Score: ${currentScore}`)
-        console.log(`High Score: ${highScore}`)
     }
     
     return(
         <>
+        <Title score={currentScore} hiScore={highScore}></Title>
         <fieldset className="gameboard">
             <Card function={PlayerChoosesCard} source={images[0][1]} alternate={images[0][0]}/>   
             <Card function={PlayerChoosesCard} source={images[1][1]} alternate={images[1][0]}/>

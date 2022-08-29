@@ -1,24 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export function ScoreComponent() {
-    const [score, setScore] = useState(0)
-
-    const changeScore = () => {
-      setScore(12) 
-    }
-
-    const [highScore, setHighScore] = useState(0)
-
-    const changeHighScore = () => {
-        setHighScore(13)
-    }
+export function ScoreComponent(props) {
 
     return(
         <>
         <fieldset>
             <legend>Score</legend>
-            <p>Current Score: {score}</p>
-            <p>High Score: {highScore}</p>
+            <p>Current Score: {props.score}</p>
+            <p>High Score: {props.hiScore}</p>
             <p>Max Score: 16</p>
         </fieldset>
         </>
