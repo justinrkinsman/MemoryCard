@@ -58,10 +58,13 @@ export function Gameboard() {
     const PlayerChoosesCard = (e) => {
         if(clickedCard.includes(e.target.alt) === false){
             setClickedCard(current => [...current, e.target.alt])
+            setCurrentScore(currentScore + 1)
         }else{
             setClickedCard([])
+            setCurrentScore(0)
         }
         console.log(clickedCard)
+        console.log(currentScore)
     }
     
     return(
