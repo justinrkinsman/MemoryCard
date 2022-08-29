@@ -22,7 +22,7 @@ export function Gameboard() {
 
     const [clickedCard, setClickedCard] = useState([])
     const [currentScore, setCurrentScore] = useState(0)
-    const [HighScore, setHighScore] = useState(0)
+    const [highScore, setHighScore] = useState(0)
     const [images, setImages] = useState([
         ['Dracula', dracula], 
         ['Frankenstein', frankenstein], 
@@ -59,12 +59,14 @@ export function Gameboard() {
         if(clickedCard.includes(e.target.alt) === false){
             setClickedCard(current => [...current, e.target.alt])
             setCurrentScore(currentScore + 1)
+            setHighScore(currentScore + 1)
         }else{
             setClickedCard([])
             setCurrentScore(0)
         }
         console.log(clickedCard)
-        console.log(currentScore)
+        console.log(`Current Score: ${currentScore}`)
+        console.log(`High Score: ${highScore}`)
     }
     
     return(
